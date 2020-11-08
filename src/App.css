@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #003559;
+    --color-secundary: #BEE3DB;
+    --color-highlight: #0094c8;
+    --color-background: #faf9f9;
+    --color-hue: #ffd6ba;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body, input, button {
+    font-family: Roboto, sans-serif;
+}
