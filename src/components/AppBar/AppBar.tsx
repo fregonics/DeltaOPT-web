@@ -1,9 +1,42 @@
 import React from 'react'
+import { Ballot, Business, Transform } from '@material-ui/icons'
+
+import { Link } from 'react-router-dom';
+import './AppBar.css'
+
 
 function AppBar() {
     return (
         <header>
-            <h1>DeltaOPT </h1>
+            <div id="app-navbar">
+                <div className="title-section">
+                    <Link to="/">
+                        <h1>DeltaOPT </h1>
+                    </Link>
+                </div>
+                <div className="items-section">
+                    <div className="item">
+                        <Link to="/products">
+                            <Ballot />
+                            <div className="item-description">Produtos</div>
+                        </Link>
+                    </div>
+                    <div className="item">
+                        <Link to="/providers">
+                            <Business />
+                            <div className="item-description">Fornecedores</div>
+                        </Link>
+                    </div>
+                    <div className="item">
+                        <Link to="/processes">
+                            <Transform />
+                            <div className="item-description">Processos</div>
+                        </Link>
+                    </div>
+                </div>
+                
+            </div>
+            
         </header>
     )
 }
