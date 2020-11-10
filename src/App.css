@@ -4,6 +4,8 @@
     --color-highlight: #0094c8;
     --color-background: #faf9f9;
     --color-hue: #ffd6ba;
+
+    --color-text: #323234;
 }
 
 body {
@@ -14,3 +16,14 @@ body {
 body, input, button {
     font-family: Roboto, sans-serif;
 }
+
+div, p, a, h1, h2, h3, h4, h5, h6{
+    color: var(--color-text);
+}
+
+body {
+    background: var(--color-background)
+}
+
+/* for most items i end up removing anyways */
+a {text-decoration: none;}

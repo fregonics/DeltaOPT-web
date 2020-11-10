@@ -4,6 +4,8 @@
 #app-navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    background: #ffffff;
 }
 
 
@@ -11,16 +13,13 @@
 .items-section {
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
 }
 .item {
     width: 33.32%;
     
     justify-content: center;
-    align-content: center;
-    
 }
-
 .item .item-description{
     font-size: 10px; /* temporary */
     text-align: center;
@@ -30,4 +29,21 @@
 .item .MuiSvgIcon-root {
     display: block;
     margin: auto;
+}
+
+/* Decorations for the items */
+.item .item-description{
+    color: var(--color-text);
+    text-decoration: none;
+
+    font-size: 0.8rem; /* temporary */
+    font-weight: 500;
+}
+
+
+/* Decorations for the logo */
+.title-section a {
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 0.8rem;
 }
