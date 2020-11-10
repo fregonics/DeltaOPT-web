@@ -1,0 +1,33 @@
+
+/* Divide bar in 3 parts, with the title on the right
+ * and icons nicely on the center */
+#app-navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* All items are equal, and in one line */
+.items-section {
+    display: flex;
+    flex-direction: row;
+    
+}
+.item {
+    width: 33.32%;
+    
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.item .item-description{
+    font-size: 10px; /* temporary */
+    text-align: center;
+}
+
+/* Align icons to center, they're originally inline-block */
+.item .MuiSvgIcon-root {
+    display: block;
+    margin: auto;
+}

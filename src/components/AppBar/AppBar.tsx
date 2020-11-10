@@ -9,12 +9,12 @@ function AppBar() {
     return (
         <header>
             <div id="app-navbar">
-                <div className="title-section">
+                <div className="title-section left-box">
                     <Link to="/">
                         <h1>DeltaOPT </h1>
                     </Link>
                 </div>
-                <div className="items-section">
+                <div className="items-section center-box">
                     <div className="item">
                         <Link to="/products">
                             <Ballot />
@@ -34,7 +34,7 @@ function AppBar() {
                         </Link>
                     </div>
                 </div>
-                
+                <div className="right-box"></div>
             </div>
             
         </header>
