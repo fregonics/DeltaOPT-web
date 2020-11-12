@@ -1,10 +1,12 @@
 import React from 'react';
-import { Table } from '@material-ui/core';
+import { TableRow, TableCell } from '@material-ui/core';
 
 
 function Grid() {
+    
+    
     return (
-        <h1>grid</h1>
+       <h1>grid</h1>
     )
 }
 
