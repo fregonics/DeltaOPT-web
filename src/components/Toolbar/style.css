@@ -1,0 +1,14 @@
+.MuiList-padding {
+    padding-top: 4.5rem;
+}
+
+.MuiListItem-button {
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem 0;
+}
+
+.MuiListItemIcon-root {
+    display: flex;
+    justify-content: center;
+}

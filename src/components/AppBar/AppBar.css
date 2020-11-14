@@ -6,6 +6,10 @@
     grid-template-columns: 1fr 1fr 1fr;
 
     background: #ffffff;
+    /* width: calc(100% - 56px); */
+    position: fixed;
+    z-index: 1400;
+    width: 100%;
 }
 
 

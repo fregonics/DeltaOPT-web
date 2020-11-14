@@ -6,7 +6,9 @@ import Product from '../model/Product';
 import AppBar from '../components/AppBar/AppBar'
 import Grid from '../components/Grid/Grid';
 import ProductsGrid from '../components/ProductsGrid/ProductsGrid';
+import Toolbar from '../components/Toolbar/Toolbar';
 
+import './style.css'
 
 function ProdutsView() {
 
@@ -20,14 +22,18 @@ function ProdutsView() {
 
     return (
         <div className="App">
+            
+            
             <AppBar />
-            {/* <p>{products}</p> */}
-
-            <ProductsGrid>{products}</ProductsGrid>
-
-            <Button variant="contained" color="primary">
-            Hello world
-            </Button>
+            <div className="data-interface">
+                <Toolbar />
+                
+                <ProductsGrid>
+                    {products}
+                </ProductsGrid>
+            </div>
+            
+            
         </div>
     )
 }
